@@ -49,4 +49,4 @@ group :production, :test do
 end
 
 gem 'thin'
-gem 'therubyracer'
+
