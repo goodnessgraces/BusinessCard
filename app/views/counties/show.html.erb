@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @county.name %>
+</p>
+
+<p>
+	<strong>Categories in this County:</strong>
+	<% @county.categories.each do |category| %>
+	<ul>
+		<li><%= category.name %></li>
+		
+	</ul>
+	<% end %>
+</p>
+
+<%= link_to 'Edit', edit_county_path(@county) %> |
+<%= link_to 'Back', counties_path %>
